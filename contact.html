@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - KoopJob</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🤝</span>
+                <span class="logo-text">Koop<span class="logo-highlight">Job</span></span>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="features.html">Возможности</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="contact.html" class="active">Контакты</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#" class="btn btn-outline">Вход</a>
+                    <a href="#" class="btn btn-primary">Регистрация</a>
+                </div>
+            </nav>
+            
+            <button class="mobile-toggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Герой-секция -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Свяжитесь с нами</h1>
+            <p>У вас есть вопросы, предложения или нужна помощь? Наша команда всегда готова помочь вам и вашей команде.</p>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Связаться с KoopJob</h2>
+                    <p>Мы ценим каждое обращение и постараемся ответить вам как можно скорее. Обычно мы отвечаем в течение 24 часов в рабочие дни.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Наш офис</h4>
+                            <p>ул. Примерная, 123, Москва, Россия, 123456</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p>+7 (495) 123-45-67</p>
+                            <p>Пн-Пт: 9:00-18:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@koopjob.ru</p>
+                            <p>support@koopjob.ru (техподдержка)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Часы работы</h4>
+                            <p>Понедельник - Пятница: 9:00 - 18:00</p>
+                            <p>Суббота - Воскресенье: выходной</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Напишите нам</h2>
+                    <p>Заполните форму ниже, и мы свяжемся с вами в ближайшее время</p>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Ваш email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Компания</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Тема</label>
+                            <select id="subject" name="subject">
+                                <option value="general">Общий вопрос</option>
+                                <option value="support">Техническая поддержка</option>
+                                <option value="sales">Вопросы по продажам</option>
+                                <option value="partnership">Партнерство</option>
+                                <option value="feedback">Обратная связь</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Карта -->
+            <div class="map-section" style="margin-top: 80px;">
+                <h2 style="text-align: center; margin-bottom: 30px;">Как добраться</h2>
+                <div style="background: linear-gradient(135deg, #3a86ff, #8338ec); height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                    <div style="text-align: center;">
+                        <i class="fas fa-map-marked-alt" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <p>Карта расположения нашего офиса</p>
+                        <p>ул. Примерная, 123, Москва</p>
+                        <p style="margin-top: 20px; font-size: 1rem;">(Интерактивная карта будет здесь в реальном проекте)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ -->
+            <div class="faq-section" style="margin-top: 80px;">
+                <h2 style="text-align: center; margin-bottom: 50px;">Часто задаваемые вопросы</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как начать использовать KoopJob?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Просто зарегистрируйтесь на нашем сайте, и вы получите доступ к бесплатному 30-дневному пробному периоду. Вам не потребуется вводить данные карты для начала пробного периода.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Есть ли мобильное приложение?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, у нас есть мобильные приложения для iOS и Android. Вы можете скачать их в App Store и Google Play соответственно.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Предоставляете ли вы обучение для команд?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предлагаем бесплатные обучающие вебинары и индивидуальные сессии для команд. Свяжитесь с нашим отделом продаж для получения подробной информации.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какие способы оплаты вы принимаете?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы принимаем основные кредитные карты (Visa, MasterCard, American Express), а также банковские переводы для корпоративных клиентов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-about">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon">🤝</span>
+                    <span class="logo-text">Koop<span class="logo-highlight">Job</span></span>
+                </a>
+                <p>Платформа для эффективной совместной работы, которая объединяет команды и помогает достигать общих целей.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Платформа</h4>
+                <ul>
+                    <li><a href="features.html">Возможности</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Блог</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Поддержка</h4>
+                <ul>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="#">Центр помощи</a></li>
+                    <li><a href="#">Документация</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Правовая информация</h4>
+                <ul>
+                    <li><a href="#">Условия использования</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Политика cookies</a></li>
+                    <li><a href="#">Соответствие GDPR</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="currentYear">2023</span> KoopJob. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
